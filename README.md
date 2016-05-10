@@ -16,7 +16,11 @@
 - Family is represented as a Graph, with Persons as Nodes and Relations as Edges.
 - Edge is called 'Connection' and it holds From Person, To Person, Generic Relation and Relation Level.
 - The system can support both Generic and Specific type of relations.
-- Relation level of a connection represents the difference of levels above or below the persons. 
+- Relation level of a connection represents the difference of levels above or below the persons. It also helps in 
+representing relations like GREAT GREAT GRANDPARENT or GREAT GRANDCHILD.
+
+- The system is Loosly coupled, with componenets dependeding on their interfaces rather than concrete implementations
+. Components can be replaced and extended easily
 - Template pattern followed for Relations, so that every relations implements a stipulated template of methods.
 - Graph stores only generic relations and they are converted back to specific relations based on gender.
 - Chain of Responsibilities pattern used for Validation. Connections have to go through a series of validations like 
