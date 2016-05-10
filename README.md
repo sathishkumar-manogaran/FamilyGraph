@@ -20,7 +20,7 @@
 representing relations like GREAT GREAT GRANDPARENT or GREAT GRANDCHILD.
 
 - The system is Loosly coupled, with componenets dependeding on their interfaces rather than concrete implementations
-. Components can be replaced and extended easily
+. Components can be replaced and extended easily.
 - Template pattern followed for Relations, so that every relations implements a stipulated template of methods.
 - Graph stores only generic relations and they are converted back to specific relations based on gender.
 - Chain of Responsibilities pattern used for Validation. Connections have to go through a series of validations like 
