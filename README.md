@@ -9,8 +9,8 @@
 6.  Display Male Family Members
 7.  Display Female Family Members
 8.  Display Aggregate Relation
-9.  Display Persons by Relation
-10. Display Persons Related to someone with Relation
+9.  Display Persons by Relation (Ex: Display al Persons who are related to this Person as AUNTs)
+10. Display Persons Related to someone with Relation (Ex: Display all Persons who are MOTHERs to someone)
 
 ### Design Decisions
 - Family is represented as a Graph, with Persons as Nodes and Relations as Edges.
@@ -19,8 +19,9 @@
 - Relation level of a connection represents the difference of levels above or below the persons. It also helps in 
 representing relations like GREAT GREAT GRANDPARENT or GREAT GRANDCHILD.
 
-- The system is Loosly coupled, with componenets dependeding on their interfaces rather than concrete implementations
+- The system is Loosely coupled, with components depending on their interfaces rather than concrete implementations
 . Components can be replaced and extended easily.
+- Most of the methods are Polymorphic, written for various use-cases.
 - Template pattern followed for Relations, so that every relations implements a stipulated template of methods.
 - Graph stores only generic relations and they are converted back to specific relations based on gender.
 - Chain of Responsibilities pattern used for Validation. Connections have to go through a series of validations like 
