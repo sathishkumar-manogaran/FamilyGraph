@@ -123,13 +123,13 @@ public class FamilyNetworkClient {
     }
 
     private static void displayFamilyInDescendingOrderOfAge() {
-        System.out.println("Family in Descending Order:");
+        System.out.println("Family in Descending Order of Age:");
         printer.printFamilyInDescendingOrderOfAge(family);
         pause();
     }
 
     private static void displayFamilyInAscendingOrderOfAge() {
-        System.out.println("Family in Ascending Order:");
+        System.out.println("Family in Ascending Order of Age:");
         printer.printFamilyInAscendingOrderOfAge(family);
         pause();
     }
