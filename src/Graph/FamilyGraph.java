@@ -5,7 +5,7 @@ import Relationship.IGenericRelation;
 import Relationship.IRelation;
 import Relationship.ISpecificRelation;
 import Relationship.SpecificRelation;
-import Validation.Validator;
+import Validation.IValidator;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,10 +20,10 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
-import static Utils.FilterUtilities.filterConnectionsByGenerationLevel;
-import static Utils.FilterUtilities.filterConnectionsBySpecificRelation;
-import static Utils.FilterUtilities.filterPersonsByGender;
-import static Utils.RelationUtility.parseToGenericRelation;
+import static Utils.FilterUtils.filterConnectionsByGenerationLevel;
+import static Utils.FilterUtils.filterConnectionsBySpecificRelation;
+import static Utils.FilterUtils.filterPersonsByGender;
+import static Utils.RelationUtils.parseToGenericRelation;
 
 /**
  * This is the central Data Structure that holds all the Persons in the family and their corresponding connections.
@@ -31,14 +31,14 @@ import static Utils.RelationUtility.parseToGenericRelation;
 public class FamilyGraph {
     private final Map<String, Person> mPersonIdMap; // Represents all the persons put into the graph.
     private final Map<Person, Set<ConnectionEdge>> mRelationMap;
-    private final Validator validator;
+    private final IValidator validator;
 
     /**
      * Constructor
      *
-     * @param validator Validator used to validate relations
+     * @param validator IValidator used to validate relations
      */
-    public FamilyGraph(Validator validator) {
+    public FamilyGraph(IValidator validator) {
         this.validator = validator;
         mPersonIdMap = new HashMap<>();
         mRelationMap = new HashMap<>();

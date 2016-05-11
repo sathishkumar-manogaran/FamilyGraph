@@ -5,8 +5,8 @@ import Graph.FamilyGraph;
 import Graph.Person;
 import Validation.AgeValidator;
 import Validation.GenderValidator;
+import Validation.IValidator;
 import Validation.RelationshipValidator;
-import Validation.Validator;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,10 +28,10 @@ public class FileLoaderServiceTest {
     private LoaderService loaderService;
     private FamilyGraph family;
 
-    private static Validator setUpValidation() {
-        Validator genderValidator = new GenderValidator();
-        Validator ageValidator = new AgeValidator();
-        Validator relationShipValidator = new RelationshipValidator();
+    private static IValidator setUpValidation() {
+        IValidator genderValidator = new GenderValidator();
+        IValidator ageValidator = new AgeValidator();
+        IValidator relationShipValidator = new RelationshipValidator();
 
         genderValidator.setNextValidatorInChain(ageValidator);
         ageValidator.setNextValidatorInChain(relationShipValidator);
@@ -43,7 +43,7 @@ public class FileLoaderServiceTest {
     public void setUp() throws IOException {
         loaderService = new FileLoaderService(new BufferedReader(new FileReader(new File(
                 "res//testFamilyToLoad"))));
-        Validator validator = setUpValidation();
+        IValidator validator = setUpValidation();
         family = new FamilyGraph(validator);
         loaderService.loadFamily(family);
     }

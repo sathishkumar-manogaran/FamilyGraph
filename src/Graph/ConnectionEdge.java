@@ -3,7 +3,7 @@ package Graph;
 import Relationship.IGenericRelation;
 import Relationship.ISpecificRelation;
 
-import static Utils.RelationUtility.parseToGenericRelation;
+import static Utils.RelationUtils.parseToGenericRelation;
 
 /**
  * Class representing Connection between persons

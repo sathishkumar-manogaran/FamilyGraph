@@ -10,11 +10,11 @@ import Relationship.SpecificRelation;
 /**
  * Class to validate Gender criteria for a relation
  */
-public class GenderValidator implements Validator {
-    private Validator nextValidator;
+public class GenderValidator implements IValidator {
+    private IValidator nextValidator;
 
     @Override
-    public void setNextValidatorInChain(Validator validator) {
+    public void setNextValidatorInChain(IValidator validator) {
         this.nextValidator = validator;
     }
 

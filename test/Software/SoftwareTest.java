@@ -7,8 +7,8 @@ import Printer.ConsolePrintService;
 import Printer.PrintService;
 import Validation.AgeValidator;
 import Validation.GenderValidator;
+import Validation.IValidator;
 import Validation.RelationshipValidator;
-import Validation.Validator;
 import org.junit.Before;
 
 import java.io.BufferedReader;
@@ -27,12 +27,12 @@ public class SoftwareTest {
     protected static FamilyGraph family;
     protected static LoaderService loader;
     protected static PrintService printer;
-    protected static Validator validator;
+    protected static IValidator validator;
 
-    private static Validator setUpValidation() {
-        Validator genderValidator = new GenderValidator();
-        Validator ageValidator = new AgeValidator();
-        Validator relationShipValidator = new RelationshipValidator();
+    private static IValidator setUpValidation() {
+        IValidator genderValidator = new GenderValidator();
+        IValidator ageValidator = new AgeValidator();
+        IValidator relationShipValidator = new RelationshipValidator();
 
         genderValidator.setNextValidatorInChain(ageValidator);
         ageValidator.setNextValidatorInChain(relationShipValidator);

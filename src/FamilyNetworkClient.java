@@ -5,8 +5,8 @@ import Printer.ConsolePrintService;
 import Printer.PrintService;
 import Validation.AgeValidator;
 import Validation.GenderValidator;
+import Validation.IValidator;
 import Validation.RelationshipValidator;
-import Validation.Validator;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,7 +21,7 @@ public class FamilyNetworkClient {
 
     private static final FamilyGraph family;
     private static final PrintService printer;
-    private static final Validator validator;
+    private static final IValidator validator;
     private static LoaderService loader;
 
     static {
@@ -163,10 +163,10 @@ public class FamilyNetworkClient {
         pause();
     }
 
-    private static Validator setUpValidator() {
-        Validator genderValidator = new GenderValidator();
-        Validator ageValidator = new AgeValidator();
-        Validator relationShipValidator = new RelationshipValidator();
+    private static IValidator setUpValidator() {
+        IValidator genderValidator = new GenderValidator();
+        IValidator ageValidator = new AgeValidator();
+        IValidator relationShipValidator = new RelationshipValidator();
 
         genderValidator.setNextValidatorInChain(ageValidator);
         ageValidator.setNextValidatorInChain(relationShipValidator);

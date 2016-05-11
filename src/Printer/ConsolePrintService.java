@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.Collection;
 
-import static Utils.RelationUtility.parseToRelation;
+import static Utils.RelationUtils.parseToRelation;
 
 /**
  * Class which holds all Print related methods of the graph.

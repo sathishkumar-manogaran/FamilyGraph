@@ -8,8 +8,8 @@ import Relationship.ISpecificRelation;
 /**
  * Interface to abstract Validators
  */
-public interface Validator {
-    void setNextValidatorInChain(Validator validator);
+public interface IValidator {
+    void setNextValidatorInChain(IValidator validator);
 
     boolean validate(Person p1, IGenericRelation genericRelation, Person p2, int relationLevel, FamilyGraph family);
 

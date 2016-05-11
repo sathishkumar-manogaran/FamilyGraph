@@ -9,11 +9,11 @@ import Relationship.ISpecificRelation;
 /**
  * Class to validate age criteria for a Relation
  */
-public class AgeValidator implements Validator {
-    private Validator nextValidator;
+public class AgeValidator implements IValidator {
+    private IValidator nextValidator;
 
     @Override
-    public void setNextValidatorInChain(Validator validator) {
+    public void setNextValidatorInChain(IValidator validator) {
         this.nextValidator = validator;
     }
 

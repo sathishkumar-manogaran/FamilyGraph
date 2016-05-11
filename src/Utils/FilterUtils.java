@@ -10,7 +10,7 @@ import java.util.Iterator;
 /**
  * Utility class to store methods that filter
  */
-public class FilterUtilities {
+public class FilterUtils {
     public static Collection<ConnectionEdge> filterConnectionsByGenerationLevel(Person person, int generationLevel,
                                                                                 Collection<ConnectionEdge> allConnections) {
         for (Iterator<ConnectionEdge> iterator = allConnections.iterator(); iterator.hasNext(); ) {

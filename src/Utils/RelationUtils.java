@@ -8,7 +8,7 @@ import Relationship.SpecificRelation;
 /**
  * Utility Class to deal with relation
  */
-public class RelationUtility {
+public class RelationUtils {
     public static IGenericRelation parseToGenericRelation(String relation) {
         relation = relation.toUpperCase();
         try {
