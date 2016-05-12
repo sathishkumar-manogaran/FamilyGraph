@@ -31,8 +31,7 @@ age, gender and possible relationships.
 - Most of the relations come in pairs, as one is reverse of the other. They are coupled together, and one depends on 
 another to get reverse relation in `getReverseRelation()`. Same is followed for Specific relations in 
 `getGenericRelation()`
-- Using enum functions instead of maintaining a Map, because it enforces to add required logic for every new 
-generic relation added and also to avoid adding a new entity at 2 places (enum and map). 
+- Using enum as all the relations have static state and enum promotes type safety.
 
 ### Assumptions/Limitations
 - PARENT, SIBLING, CHILD are direct relations and KIN, COUSIN, NIBLING are indirect relations.
