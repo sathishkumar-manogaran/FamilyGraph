@@ -25,7 +25,7 @@ public final class ConnectionEdge {
     }
 
     /**
-     * This Constructor mainly defined to ease Unit test cas
+     * This Constructor mainly defined to ease Unit testing
      *
      * @param fromPid
      * @param relation

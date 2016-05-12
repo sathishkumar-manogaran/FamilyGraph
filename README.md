@@ -28,15 +28,15 @@ representing relations like GREAT GREAT GRANDPARENT or GREAT GRANDCHILD.
 age, gender and possible relationships.
 - Violated 'Law of Demeter' to reduce wrapping and complexity. Eg: `edge.relation().getGenericRelation()`
 - Violated SRP for DRY at places like `traverseFamilyGraph`
-- Most of the relations come in pairs, as one is reverse of the other. They are coupled together, and one depends on 
-another to get reverse relation in `getReverseRelation()`. Same is followed for Specific relations in 
-`getGenericRelation()`
+- Most of the relations come in pairs, as one is reverse of the other and one is alternate to another. They are coupled 
+together, and one depends on another to get reverse relation in `getReverseRelation()`. 
+- Specific relations are tied to generic relations with method: `getGenericRelation()`
 - Using enum as all the relations have static state and enum promotes type safety.
 
 ### Assumptions/Limitations
-- PARENT, SIBLING, CHILD are direct relations and KIN, COUSIN, NIBLING are indirect relations.
-So, when there is no direct connection between two persons, we assume a indirect relation
-between them. For example, KIN of a CHILD is treated as COUSIN, instead of SIBLING.
+- PARENT, SIBLING, CHILD are direct relations and KIN, COUSIN, NIBLING are indirect relations. So, when there is no 
+direct connection between two persons, they are assumed to have a indirect relation between them. For example, KIN of
+ a CHILD is treated as COUSIN, instead of SIBLING.
 - COUSIN is both generic and specific relation.
 
 ### Glossary
