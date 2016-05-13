@@ -21,7 +21,6 @@ public enum GenericRelation implements IGenericRelation {
                 case SIBLING:
                 case COUSIN:
                     return KIN;
-
                 case GRANDPARENT:
                     return GRANDPARENT;
                 case GRANDCHILD:
@@ -40,12 +39,10 @@ public enum GenericRelation implements IGenericRelation {
                 case CHILD:
                 case NIBLING:
                     return COUSIN;
-
                 case SPOUSE:
                 case SIBLING:
                 case COUSIN:
                     return KIN;
-
                 case GRANDPARENT:
                     return GRANDPARENT;
                 case GRANDCHILD:
@@ -70,7 +67,6 @@ public enum GenericRelation implements IGenericRelation {
                     return NIBLING;
                 case SIBLING:
                     return CHILD;
-
                 case GRANDPARENT:
                     return KIN;
                 case GRANDCHILD:
@@ -89,12 +85,10 @@ public enum GenericRelation implements IGenericRelation {
                 case CHILD:
                 case NIBLING:
                     return GRANDCHILD;
-
                 case SPOUSE:
                 case SIBLING:
                 case COUSIN:
                     return NIBLING;
-
                 case GRANDPARENT:
                     return KIN;
                 case GRANDCHILD:
@@ -111,7 +105,6 @@ public enum GenericRelation implements IGenericRelation {
                 case KIN:
                 case GRANDPARENT:
                     return GRANDPARENT;
-
                 case SIBLING:
                 case SPOUSE:
                 case COUSIN:
@@ -119,7 +112,6 @@ public enum GenericRelation implements IGenericRelation {
                 case CHILD:
                 case NIBLING:
                     return KIN;
-
                 case GRANDCHILD:
                     return COUSIN;
             }
@@ -137,12 +129,10 @@ public enum GenericRelation implements IGenericRelation {
                 case NIBLING:
                 case GRANDCHILD:
                     return GRANDCHILD;
-
                 case SPOUSE:
                 case SIBLING:
                 case COUSIN:
                     return GRANDCHILD;
-
                 case GRANDPARENT:
                     return COUSIN;
             }
@@ -156,7 +146,6 @@ public enum GenericRelation implements IGenericRelation {
             switch ((GenericRelation) curRelation) {
                 case PARENT:
                     return KIN;
-
                 case CHILD:
                 case NIBLING:
                 case GRANDPARENT:
@@ -164,7 +153,6 @@ public enum GenericRelation implements IGenericRelation {
                 case KIN:
                 case COUSIN:
                     return curRelation;
-
                 case SPOUSE:
                 case SIBLING:
                     return COUSIN;
@@ -184,7 +172,6 @@ public enum GenericRelation implements IGenericRelation {
                 case COUSIN:
                 case SIBLING:
                     return curRelation;
-
                 case CHILD:
                     return NIBLING;
                 case SPOUSE:
@@ -204,13 +191,10 @@ public enum GenericRelation implements IGenericRelation {
                 case NIBLING:
                 case COUSIN:
                     return curRelation;
-
                 case PARENT:
                     return KIN;
-
                 case CHILD:
                     return NIBLING;
-
                 case SPOUSE:
                 case SIBLING:
                     return COUSIN;

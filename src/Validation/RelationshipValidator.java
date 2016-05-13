@@ -34,8 +34,11 @@ public class RelationshipValidator implements IValidator {
             default:
                 isRelationLevelValid = relationLevel == connection.getRelationLevel();
         }
-        return isRelationLevelValid && (genericRelation.equals(connection.relation())
-                || genericRelation.getAlternateRelation().equals(connection.relation()));
+        boolean isValid = isRelationLevelValid &&
+                (genericRelation.equals(connection.relation())
+                        || genericRelation.getAlternateRelation().equals(connection.relation()));
+        return (nextValidator == null) ? isValid : isValid && nextValidator.validate(p1, genericRelation, p2, relationLevel,
+                family);
     }
 
     @Override

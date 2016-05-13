@@ -29,7 +29,7 @@ public class AgeValidator implements IValidator {
             case CHILD:
             case NIBLING:
             case GRANDCHILD:
-                isValid = p1.getAge() < p2.getAge();
+                isValid = (p1.getAge() < p2.getAge());
                 break;
             default:
                 isValid = true;
