@@ -21,22 +21,27 @@ public class RelationshipValidator implements IValidator {
     @Override
     public boolean validate(Person p1, IGenericRelation genericRelation, Person p2, int relationLevel, FamilyGraph family) {
         // It's Ok to compare generic relations as it has already passed the gender validation.
-        ConnectionEdge connection = family.getConnection(p1, p2);
-        if (connection == null) return true;
-        boolean isRelationLevelValid;
-        switch ((GenericRelation) genericRelation) {
-            case GRANDPARENT:
-                isRelationLevelValid = relationLevel >= connection.getRelationLevel();
-                break;
-            case GRANDCHILD:
-                isRelationLevelValid = relationLevel <= connection.getRelationLevel();
-                break;
-            default:
-                isRelationLevelValid = relationLevel == connection.getRelationLevel();
+        ConnectionEdge possibleConnection = family.getConnection(p1, p2);
+        boolean isValid;
+        if (possibleConnection == null) {
+            // Which means these two Persons are not connected at all, directly or indirectly.
+            isValid = true;
+        } else {
+            boolean isRelationLevelValid;
+            switch ((GenericRelation) genericRelation) {
+                case GRANDPARENT:
+                    isRelationLevelValid = relationLevel >= possibleConnection.getRelationLevel();
+                    break;
+                case GRANDCHILD:
+                    isRelationLevelValid = relationLevel <= possibleConnection.getRelationLevel();
+                    break;
+                default:
+                    isRelationLevelValid = relationLevel == possibleConnection.getRelationLevel();
+            }
+            isValid = isRelationLevelValid &&
+                    (genericRelation.equals(possibleConnection.relation())
+                            || genericRelation.getAlternateRelation().equals(possibleConnection.relation()));
         }
-        boolean isValid = isRelationLevelValid &&
-                (genericRelation.equals(connection.relation())
-                        || genericRelation.getAlternateRelation().equals(connection.relation()));
         return (nextValidator == null) ? isValid : isValid && nextValidator.validate(p1, genericRelation, p2, relationLevel,
                 family);
     }
