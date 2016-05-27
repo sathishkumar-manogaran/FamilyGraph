@@ -1,11 +1,11 @@
-package Graph;
+package graph;
 
-import Relationship.GenericRelation;
-import Relationship.IGenericRelation;
-import Relationship.IRelation;
-import Relationship.ISpecificRelation;
-import Relationship.SpecificRelation;
-import Validation.IValidator;
+import relationship.GenericRelation;
+import relationship.IGenericRelation;
+import relationship.IRelation;
+import relationship.ISpecificRelation;
+import relationship.SpecificRelation;
+import validation.IValidator;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,10 +20,10 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
-import static Utils.FilterUtils.filterConnectionsByGenerationLevel;
-import static Utils.FilterUtils.filterConnectionsBySpecificRelation;
-import static Utils.FilterUtils.filterPersonsByGender;
-import static Utils.RelationUtils.parseToGenericRelation;
+import static utils.FilterUtils.filterConnectionsByGenerationLevel;
+import static utils.FilterUtils.filterConnectionsBySpecificRelation;
+import static utils.FilterUtils.filterPersonsByGender;
+import static utils.RelationUtils.parseToGenericRelation;
 
 /**
  * This is the central Data Structure that holds all the Persons in the family and their corresponding connections.

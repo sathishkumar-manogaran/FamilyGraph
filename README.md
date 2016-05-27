@@ -1,5 +1,5 @@
-# Family Graph
-
+# Family graph (Plain)
+For a more spiced-up flavor of this project, refer: https://github.com/gopalakshintala/family-tree
 ### Features
 1.  Display Family Tree
 2.  Display Shortest Relation Chain
@@ -13,12 +13,12 @@
 10. Display Persons Related to someone with Relation (Ex: Display all Persons who are MOTHERs to someone)
 
 ### Design Decisions
-- Family is represented as a Directed Graph, with Persons as Nodes and Relations as Edges.
+- Family is represented as a Directed graph, with Persons as Nodes and Relations as Edges.
 - Edge is called 'Connection' and it holds From Person, To Person, Generic Relation and Relation Level.
 - The system can support both Generic and Specific type of relations.
 - Relation level of a connection represents the difference of levels above or below, between the persons in relation.
  It also helps in representing relations like GREAT GREAT GRANDPARENT or GREAT GRANDCHILD.
-- Graph stores only generic relations and they are converted back to specific relations based on gender.
+- graph stores only generic relations and they are converted back to specific relations based on gender.
 - Most of the relations come in pairs, as one is reverse of the other and one is alternate to another. They are coupled 
 together, and one depends on another to get reverse relation in `getReverseRelation()`. 
 - Specific relations are tied to generic relations with method: `getGenericRelation()`
@@ -29,7 +29,7 @@ replaced and extended easily.
 - Classes are designed to be highly Cohesive.
 - Most of the methods are Polymorphic, written for various use-cases.
 - Template pattern followed for Relations, so that every relations implements a stipulated template of methods.
-- Chain of Responsibilities pattern used for Validation. Connections have to go through a series of validations like 
+- Chain of Responsibilities pattern used for validation. Connections have to go through a series of validations like 
 age, gender and possible relationships.
 - Violated 'Law of Demeter' to reduce wrapping and complexity. Eg: `edge.relation().getGenericRelation()`
 - Violated SRP for DRY in methods like `traverseFamilyGraph(), load()`.

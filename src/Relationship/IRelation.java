@@ -1,4 +1,4 @@
-package Relationship;
+package relationship;
 
 /**
  * Marker Interface for Relation

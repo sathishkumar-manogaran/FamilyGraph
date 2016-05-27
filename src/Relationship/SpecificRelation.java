@@ -1,4 +1,4 @@
-package Relationship;
+package relationship;
 
 /**
  * Class representing Specific relations

@@ -1,10 +1,10 @@
-package Validation;
+package validation;
 
-import Graph.FamilyGraph;
-import Graph.Person;
-import Relationship.GenericRelation;
-import Relationship.IGenericRelation;
-import Relationship.ISpecificRelation;
+import graph.FamilyGraph;
+import graph.Person;
+import relationship.GenericRelation;
+import relationship.IGenericRelation;
+import relationship.ISpecificRelation;
 
 /**
  * Class to validate age criteria for a Relation

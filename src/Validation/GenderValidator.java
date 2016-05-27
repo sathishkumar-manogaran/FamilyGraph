@@ -1,11 +1,11 @@
-package Validation;
+package validation;
 
-import Graph.FamilyGraph;
-import Graph.Person;
-import Relationship.GenericRelation;
-import Relationship.IGenericRelation;
-import Relationship.ISpecificRelation;
-import Relationship.SpecificRelation;
+import graph.FamilyGraph;
+import graph.Person;
+import relationship.GenericRelation;
+import relationship.IGenericRelation;
+import relationship.ISpecificRelation;
+import relationship.SpecificRelation;
 
 /**
  * Class to validate Gender criteria for a relation

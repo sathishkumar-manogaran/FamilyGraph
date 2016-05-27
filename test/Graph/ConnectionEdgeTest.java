@@ -1,4 +1,4 @@
-package Graph;
+package graph;
 
 import Software.SoftwareTest;
 import org.junit.Assert;

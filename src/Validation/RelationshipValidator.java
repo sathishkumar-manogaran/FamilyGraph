@@ -1,14 +1,14 @@
-package Validation;
+package validation;
 
-import Graph.ConnectionEdge;
-import Graph.FamilyGraph;
-import Graph.Person;
-import Relationship.GenericRelation;
-import Relationship.IGenericRelation;
-import Relationship.ISpecificRelation;
+import graph.ConnectionEdge;
+import graph.FamilyGraph;
+import graph.Person;
+import relationship.GenericRelation;
+import relationship.IGenericRelation;
+import relationship.ISpecificRelation;
 
 /**
- * Class to validate Possible Relationship
+ * Class to validate Possible relationship
  */
 public class RelationshipValidator implements IValidator {
     private IValidator nextValidator;

@@ -1,4 +1,4 @@
-package Relationship;
+package relationship;
 
 import org.junit.Assert;
 import org.junit.Test;

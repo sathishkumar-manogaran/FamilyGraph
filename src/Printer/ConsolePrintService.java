@@ -1,15 +1,15 @@
-package Printer;
+package printer;
 
-import Graph.ConnectionEdge;
-import Graph.FamilyGraph;
-import Graph.Person;
-import Relationship.IRelation;
+import graph.ConnectionEdge;
+import graph.FamilyGraph;
+import graph.Person;
+import relationship.IRelation;
 
 import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.Collection;
 
-import static Utils.RelationUtils.parseToRelation;
+import static utils.RelationUtils.parseToRelation;
 
 /**
  * Class which holds all Print related methods of the graph.

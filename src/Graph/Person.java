@@ -1,4 +1,4 @@
-package Graph;
+package graph;
 
 /**
  * Class to represent Person.

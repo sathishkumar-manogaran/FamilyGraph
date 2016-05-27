@@ -1,13 +1,13 @@
-import Graph.ConnectionEdgeTest;
-import Graph.FamilyGraphTest;
-import Loader.FileLoaderServiceTest;
-import Relationship.GenericRelationTest;
-import Relationship.SpecificRelationTest;
-import Validation.AgeValidatorTest;
-import Validation.GenderValidatorTest;
-import Validation.RelationshipValidatorTest;
+import graph.ConnectionEdgeTest;
+import graph.FamilyGraphTest;
+import loader.FileLoaderServiceTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import relationship.GenericRelationTest;
+import relationship.SpecificRelationTest;
+import validation.AgeValidatorTest;
+import validation.GenderValidatorTest;
+import validation.RelationshipValidatorTest;
 
 /**
  * Test Suite to aggregate all tests

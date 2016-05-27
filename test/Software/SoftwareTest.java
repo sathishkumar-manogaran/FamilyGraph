@@ -1,15 +1,15 @@
 package Software;
 
-import Graph.FamilyGraph;
-import Loader.FileLoaderService;
-import Loader.LoaderService;
-import Printer.ConsolePrintService;
-import Printer.PrintService;
-import Validation.AgeValidator;
-import Validation.GenderValidator;
-import Validation.IValidator;
-import Validation.RelationshipValidator;
+import graph.FamilyGraph;
+import loader.FileLoaderService;
+import loader.LoaderService;
 import org.junit.Before;
+import printer.ConsolePrintService;
+import printer.PrintService;
+import validation.AgeValidator;
+import validation.GenderValidator;
+import validation.IValidator;
+import validation.RelationshipValidator;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

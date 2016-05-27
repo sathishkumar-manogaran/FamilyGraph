@@ -1,11 +1,11 @@
-package Validation;
+package validation;
 
-import Graph.Person;
-import Relationship.GenericRelation;
 import Software.SoftwareTest;
+import graph.Person;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import relationship.GenericRelation;
 
 /**
  * Class to test RelationShipValidator

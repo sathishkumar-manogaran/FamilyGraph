@@ -1,9 +1,9 @@
-package Utils;
+package utils;
 
-import Relationship.GenericRelation;
-import Relationship.IGenericRelation;
-import Relationship.IRelation;
-import Relationship.SpecificRelation;
+import relationship.GenericRelation;
+import relationship.IGenericRelation;
+import relationship.IRelation;
+import relationship.SpecificRelation;
 
 /**
  * Utility Class to deal with relation

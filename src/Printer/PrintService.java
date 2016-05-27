@@ -1,6 +1,6 @@
-package Printer;
+package printer;
 
-import Graph.FamilyGraph;
+import graph.FamilyGraph;
 
 /**
  * Interface for PrintService

@@ -1,15 +1,15 @@
-package Loader;
+package loader;
 
-import Graph.ConnectionEdge;
-import Graph.FamilyGraph;
-import Graph.Person;
-import Validation.AgeValidator;
-import Validation.GenderValidator;
-import Validation.IValidator;
-import Validation.RelationshipValidator;
+import graph.ConnectionEdge;
+import graph.FamilyGraph;
+import graph.Person;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import validation.AgeValidator;
+import validation.GenderValidator;
+import validation.IValidator;
+import validation.RelationshipValidator;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,9 +1,9 @@
-package Graph;
+package graph;
 
-import Relationship.SpecificRelation;
 import Software.SoftwareTest;
 import org.junit.Assert;
 import org.junit.Test;
+import relationship.SpecificRelation;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Class to test Family Graph
+ * Class to test Family graph
  */
 public class FamilyGraphTest extends SoftwareTest {
 

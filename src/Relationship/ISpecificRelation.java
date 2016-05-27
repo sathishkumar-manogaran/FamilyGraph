@@ -1,4 +1,4 @@
-package Relationship;
+package relationship;
 
 /**
  * Interface to abstract methods related to Specific relations

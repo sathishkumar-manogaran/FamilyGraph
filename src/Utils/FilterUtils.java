@@ -1,8 +1,8 @@
-package Utils;
+package utils;
 
-import Graph.ConnectionEdge;
-import Graph.Person;
-import Relationship.IGenericRelation;
+import graph.ConnectionEdge;
+import graph.Person;
+import relationship.IGenericRelation;
 
 import java.util.Collection;
 import java.util.Iterator;

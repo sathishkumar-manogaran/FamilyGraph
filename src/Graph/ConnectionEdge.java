@@ -1,9 +1,9 @@
-package Graph;
+package graph;
 
-import Relationship.IGenericRelation;
-import Relationship.ISpecificRelation;
+import relationship.IGenericRelation;
+import relationship.ISpecificRelation;
 
-import static Utils.RelationUtils.parseToGenericRelation;
+import static utils.RelationUtils.parseToGenericRelation;
 
 /**
  * Class representing Connection between persons

@@ -1,12 +1,12 @@
-package Validation;
+package validation;
 
-import Graph.Person;
-import Relationship.GenericRelation;
-import Relationship.SpecificRelation;
 import Software.SoftwareTest;
+import graph.Person;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import relationship.GenericRelation;
+import relationship.SpecificRelation;
 
 /**
  * Class to test GenderValidator

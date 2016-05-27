@@ -1,9 +1,9 @@
-package Validation;
+package validation;
 
-import Graph.FamilyGraph;
-import Graph.Person;
-import Relationship.IGenericRelation;
-import Relationship.ISpecificRelation;
+import graph.FamilyGraph;
+import graph.Person;
+import relationship.IGenericRelation;
+import relationship.ISpecificRelation;
 
 /**
  * Interface to abstract Validators
