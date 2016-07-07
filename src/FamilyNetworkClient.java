@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2016, Gopal S Akshintala
+ * This source code is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+ */
+
 import graph.FamilyGraph;
 import loader.FileLoaderService;
 import loader.LoaderService;

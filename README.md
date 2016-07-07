@@ -1,4 +1,4 @@
-# Family graph (Plain)
+# Family Graph Design (Plain)
 For a more spiced-up flavor of this project, refer: https://github.com/gopalakshintala/family-tree
 ### Features
 1.  Display Family Tree
@@ -43,3 +43,10 @@ direct connection between two persons, they are assumed to have a indirect relat
 ### Glossary
 - KIN: Generic gender neutral word chosen for UNCLE and AUNT.
 - NIBLING: Generic gender neutral word chosen for NEPHEW and NIECE
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" 
+style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span 
+xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Family Graph Design</span> by <span 
+xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Gopal S Akshintala</span> is licensed under a 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
