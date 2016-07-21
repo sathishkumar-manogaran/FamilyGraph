@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ba3470-ebe6-43ff-8ad8-6a5f4d460346" name="Default" comment="CC License Update">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Graph/ConnectionEdge.java" afterPath="$PROJECT_DIR$/src/graph/ConnectionEdge.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Graph/FamilyGraph.java" afterPath="$PROJECT_DIR$/src/graph/FamilyGraph.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Graph/Person.java" afterPath="$PROJECT_DIR$/src/graph/Person.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Loader/DBLoaderService.java" afterPath="$PROJECT_DIR$/src/loader/DBLoaderService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Loader/FileLoaderService.java" afterPath="$PROJECT_DIR$/src/loader/FileLoaderService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Loader/LoaderService.java" afterPath="$PROJECT_DIR$/src/loader/LoaderService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Printer/ConsolePrintService.java" afterPath="$PROJECT_DIR$/src/printer/ConsolePrintService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Printer/PrintService.java" afterPath="$PROJECT_DIR$/src/printer/PrintService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Relationship/GenericRelation.java" afterPath="$PROJECT_DIR$/src/relationship/GenericRelation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Relationship/IGenericRelation.java" afterPath="$PROJECT_DIR$/src/relationship/IGenericRelation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Relationship/IRelation.java" afterPath="$PROJECT_DIR$/src/relationship/IRelation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Relationship/ISpecificRelation.java" afterPath="$PROJECT_DIR$/src/relationship/ISpecificRelation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Relationship/SpecificRelation.java" afterPath="$PROJECT_DIR$/src/relationship/SpecificRelation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utils/FilterUtils.java" afterPath="$PROJECT_DIR$/src/utils/FilterUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utils/RelationUtils.java" afterPath="$PROJECT_DIR$/src/utils/RelationUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Validation/AgeValidator.java" afterPath="$PROJECT_DIR$/src/validation/AgeValidator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Validation/GenderValidator.java" afterPath="$PROJECT_DIR$/src/validation/GenderValidator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Validation/IValidator.java" afterPath="$PROJECT_DIR$/src/validation/IValidator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Validation/RelationshipValidator.java" afterPath="$PROJECT_DIR$/src/validation/RelationshipValidator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Graph/ConnectionEdgeTest.java" afterPath="$PROJECT_DIR$/test/graph/ConnectionEdgeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Graph/FamilyGraphTest.java" afterPath="$PROJECT_DIR$/test/graph/FamilyGraphTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Loader/FileLoaderServiceTest.java" afterPath="$PROJECT_DIR$/test/loader/FileLoaderServiceTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Relationship/GenericRelationTest.java" afterPath="$PROJECT_DIR$/test/relationship/GenericRelationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Relationship/SpecificRelationTest.java" afterPath="$PROJECT_DIR$/test/relationship/SpecificRelationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Software/SoftwareTest.java" afterPath="$PROJECT_DIR$/test/software/SoftwareTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Validation/AgeValidatorTest.java" afterPath="$PROJECT_DIR$/test/validation/AgeValidatorTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Validation/GenderValidatorTest.java" afterPath="$PROJECT_DIR$/test/validation/GenderValidatorTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Validation/RelationshipValidatorTest.java" afterPath="$PROJECT_DIR$/test/validation/RelationshipValidatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/Cc.xml" afterPath="$PROJECT_DIR$/.idea/copyright/Cc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FamilyGraph.iml" afterPath="$PROJECT_DIR$/FamilyGraph.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FamilyNetworkClient.java" afterPath="$PROJECT_DIR$/src/FamilyNetworkClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TestSuite.java" afterPath="$PROJECT_DIR$/test/TestSuite.java" />
     </list>
     <ignored path="FamilyTree.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +36,7 @@
       <file leaf-file-name="ConnectionEdge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/ConnectionEdge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="105">
               <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="e#0#3284#0" expanded="true" />
@@ -81,8 +48,8 @@
       <file leaf-file-name="FamilyGraph.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graph/FamilyGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+            <state relative-caret-position="315">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -115,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Graph/FamilyGraphAPI.java" />
         <option value="$PROJECT_DIR$/src/FamilyNetwork.java" />
         <option value="$PROJECT_DIR$/src/Loader/FamilyGraphLoader.java" />
         <option value="$PROJECT_DIR$/src/Printer/FamilyGraphPrinter.java" />
@@ -166,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/loader/LoaderService.java" />
         <option value="$PROJECT_DIR$/test/TestSuite.java" />
         <option value="$PROJECT_DIR$/src/Graph/ConnectionEdge.java" />
+        <option value="$PROJECT_DIR$/src/graph/FamilyGraph.java" />
       </list>
     </option>
   </component>
@@ -262,6 +229,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -342,12 +311,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Project" />
@@ -1003,7 +970,9 @@
       <workItem from="1469105564104" duration="200000" />
       <workItem from="1469105770773" duration="123000" />
       <workItem from="1469105915520" duration="271000" />
-      <workItem from="1469106311889" duration="176000" />
+      <workItem from="1469106311889" duration="244000" />
+      <workItem from="1469106578631" duration="64000" />
+      <workItem from="1469106666216" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="ToDo - Relationship Validator">
       <created>1462459786455</created>
@@ -1138,7 +1107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464332308629</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="CC License Update">
+      <created>1469106517008</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1469106517008</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1174,7 +1150,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191637000" />
+    <option name="totallyTimeSpent" value="191787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1187,7 +1163,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1225" height="777" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1200,7 +1176,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15131024" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15131024" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15840119" sideWeight="0.48677248" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1247,7 +1223,8 @@
     <MESSAGE value="Working" />
     <MESSAGE value="Version-0.1" />
     <MESSAGE value="Doc Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Doc Update" />
+    <MESSAGE value="CC License Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="CC License Update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1257,7 +1234,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/test/graph/FamilyGraphTest.java</url>
-          <line>161</line>
+          <line>155</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
@@ -1571,7 +1548,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/ConnectionEdge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="105">
           <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="e#0#3284#0" expanded="true" />
@@ -1581,8 +1558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/FamilyGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="315">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding />
         </state>
       </provider>
