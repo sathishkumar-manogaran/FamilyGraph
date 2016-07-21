@@ -23,7 +23,6 @@ For a more spiced-up flavor of this project, refer: https://github.com/gopalaksh
 together, and one depends on another to get reverse relation in `getReverseRelation()`. 
 - Specific relations are tied to generic relations with method: `getGenericRelation()`
 - Using enum to represent Relations, as all the relations have static state and enum promotes type safety.
-
 - Classes are Loosely coupled, depending on interfaces rather than concrete implementations. Components can be 
 replaced and extended easily.
 - Classes are designed to be highly Cohesive.
@@ -32,7 +31,7 @@ replaced and extended easily.
 - Chain of Responsibilities pattern used for validation. Connections have to go through a series of validations like 
 age, gender and possible relationships.
 - Violated 'Law of Demeter' to reduce wrapping and complexity. Eg: `edge.relation().getGenericRelation()`
-- Violated SRP for DRY in methods like `traverseFamilyGraph(), load()`.
+- Violated SRP for DRY in methods like `bfsTraverseFamilyGraph(), load()`.
 
 ### Assumptions/Limitations
 - PARENT, SIBLING, CHILD are direct relations and KIN, COUSIN, NIBLING are indirect relations. So, when there is no 
