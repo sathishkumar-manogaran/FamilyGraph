@@ -1,0 +1,60 @@
+/*
+ * Copyright (c) 2016, Gopal S Akshintala 
+ * This source code is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+ * http://creativecommons.org/licenses/by-sa/4.0/
+ */
+
+package software;
+
+import graph.FamilyGraph;
+import loader.FileLoaderService;
+import loader.LoaderService;
+import org.junit.Before;
+import printer.ConsolePrintService;
+import printer.PrintService;
+import validation.AgeValidator;
+import validation.GenderValidator;
+import validation.IValidator;
+import validation.RelationshipValidator;
+
+import java.io.*;
+
+/**
+ * Test Class holding setUp logic and is inherited by all Test Classes.
+ */
+public class SoftwareTest {
+
+    protected static ByteArrayOutputStream outContent;
+    protected static FamilyGraph family;
+    protected static LoaderService loader;
+    protected static PrintService printer;
+    protected static IValidator validator;
+
+    private static IValidator setUpValidation() {
+        IValidator genderValidator = new GenderValidator();
+        IValidator ageValidator = new AgeValidator();
+        IValidator relationShipValidator = new RelationshipValidator();
+
+        genderValidator.setNextValidatorInChain(ageValidator);
+        ageValidator.setNextValidatorInChain(relationShipValidator);
+
+        return genderValidator;
+    }
+
+    @Before
+    public void setUp() {
+        validator = setUpValidation();
+        family = new FamilyGraph(validator);
+        try {
+            loader = new FileLoaderService(new BufferedReader(new FileReader(new File("res//MyFamily"))));
+            loader.loadFamily(family);
+            printer = new ConsolePrintService(System.out);
+
+            outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
+        } catch (IOException e) {
+            System.out.println("Exception while loading family from file: " + e.getMessage());
+        }
+    }
+
+}
