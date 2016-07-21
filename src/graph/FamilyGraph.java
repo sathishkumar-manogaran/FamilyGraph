@@ -20,7 +20,7 @@ import static utils.RelationUtils.parseToGenericRelation;
 public class FamilyGraph {
     private final Map<String, Person> mPersonIdMap; // Represents all the persons put into the graph.
     private final Map<Person, Set<ConnectionEdge>> mRelationMap;
-    private final IValidator validator;
+    private final IValidator mValidator;
 
     /**
      * Constructor
@@ -28,7 +28,7 @@ public class FamilyGraph {
      * @param validator IValidator used to validate relations
      */
     public FamilyGraph(IValidator validator) {
-        this.validator = validator;
+        this.mValidator = validator;
         mPersonIdMap = new HashMap<>();
         mRelationMap = new HashMap<>();
     }
@@ -103,7 +103,7 @@ public class FamilyGraph {
             doValidate) {
         addPerson(p1);
         addPerson(p2);
-        if (doValidate && !validator.validate(p1, IGenericRelation, p2, relationLevel, this)) {
+        if (doValidate && !mValidator.validate(p1, IGenericRelation, p2, relationLevel, this)) {
             throw new IllegalArgumentException(new ConnectionEdge(p1, IGenericRelation, p2) + " is NOT a valid Relation");
         }
         mRelationMap.get(p1).add(new ConnectionEdge(p1, IGenericRelation, p2, relationLevel));
@@ -201,7 +201,7 @@ public class FamilyGraph {
      * @return Connection
      */
     public ConnectionEdge getConnection(Person p1, Person p2) {
-        ConnectionEdge connection = traverseFamilyGraph(p1, p2, null);
+        ConnectionEdge connection = bfsTraverseFamilyGraph(p1, p2, null);
         // If p2 is not reached, both are not connected
         return (connection != null && connection.to().equals(p2)) ? connection : null;
     }
@@ -214,7 +214,7 @@ public class FamilyGraph {
      */
     public Collection<ConnectionEdge> getFamilyGraphForPerson(Person person) {
         Set<ConnectionEdge> connections = new HashSet<>();
-        traverseFamilyGraph(person, null, connections);
+        bfsTraverseFamilyGraph(person, null, connections);
         return connections;
     }
 
@@ -227,7 +227,7 @@ public class FamilyGraph {
      * @param connections Connections to be populated for family graph
      * @return Connection with aggregate relation
      */
-    private ConnectionEdge traverseFamilyGraph(Person p1, Person p2, Set<ConnectionEdge> connections) {
+    private ConnectionEdge bfsTraverseFamilyGraph(Person p1, Person p2, Set<ConnectionEdge> connections) {
         if (p1 == null || mPersonIdMap.get(p1.getId()) == null) {
             throw new IllegalArgumentException("Person " + p1 + " not found in family");
         }
