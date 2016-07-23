@@ -87,7 +87,7 @@ public class ConsolePrintService implements PrintService {
     @Override
     public void printPersonsByRelation(String pId, String relation, int relationLevel, FamilyGraph family) {
         IRelation iRelation = parseToRelation(relation);
-        printPersons(family.getAllPersonByRelation(family.getPersonById(pId), iRelation, relationLevel));
+        printPersons(family.getAllPersonsByRelation(family.getPersonById(pId), iRelation, relationLevel));
     }
 
     @Override
