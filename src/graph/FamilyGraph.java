@@ -90,7 +90,6 @@ public class FamilyGraph {
         connectPersons(p1, IGenericRelation, p2, IGenericRelation.getRelationLevel(), true);
     }
 
-
     /**
      * Connects two persons in the family with Generic relation
      *
