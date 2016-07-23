@@ -13,7 +13,7 @@ For a more spiced-up flavor of this project, refer: https://github.com/gopalaksh
 10. Display Persons Related to someone with Relation (Ex: Display all Persons who are MOTHERs to someone)
 
 ### Design Decisions
-- Family is represented as a Directed graph, with Persons as Nodes and Relations as Edges. Adjacency List representation is used.
+- Family is represented as a Directed graph, with Persons as Nodes and Relations as Edges. Adjacency List graph representation is used.
 - Edge is called 'Connection' and it holds From Person, To Person, Generic Relation and Relation Level.
 - The system can support both Generic and Specific type of relations.
 - Relation level of a connection represents the difference of levels above or below, between the persons in relation.
