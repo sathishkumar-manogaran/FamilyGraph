@@ -1,40 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29ba3470-ebe6-43ff-8ad8-6a5f4d460346" name="Default" comment="Minor Changes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.12.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+    <list default="true" id="29ba3470-ebe6-43ff-8ad8-6a5f4d460346" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FamilyNetworkClient.java" afterPath="$PROJECT_DIR$/src/FamilyNetworkClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/ConnectionEdge.java" afterPath="$PROJECT_DIR$/src/graph/ConnectionEdge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/FamilyGraph.java" afterPath="$PROJECT_DIR$/src/graph/FamilyGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/Person.java" afterPath="$PROJECT_DIR$/src/graph/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loader/DBLoaderService.java" afterPath="$PROJECT_DIR$/src/loader/DBLoaderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loader/FileLoaderService.java" afterPath="$PROJECT_DIR$/src/loader/FileLoaderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loader/LoaderService.java" afterPath="$PROJECT_DIR$/src/loader/LoaderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/printer/ConsolePrintService.java" afterPath="$PROJECT_DIR$/src/printer/ConsolePrintService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/printer/PrintService.java" afterPath="$PROJECT_DIR$/src/printer/PrintService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relationship/GenericRelation.java" afterPath="$PROJECT_DIR$/src/relationship/GenericRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relationship/IGenericRelation.java" afterPath="$PROJECT_DIR$/src/relationship/IGenericRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relationship/IRelation.java" afterPath="$PROJECT_DIR$/src/relationship/IRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relationship/ISpecificRelation.java" afterPath="$PROJECT_DIR$/src/relationship/ISpecificRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relationship/SpecificRelation.java" afterPath="$PROJECT_DIR$/src/relationship/SpecificRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/FilterUtils.java" afterPath="$PROJECT_DIR$/src/utils/FilterUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/RelationUtils.java" afterPath="$PROJECT_DIR$/src/utils/RelationUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/AgeValidator.java" afterPath="$PROJECT_DIR$/src/validation/AgeValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/GenderValidator.java" afterPath="$PROJECT_DIR$/src/validation/GenderValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/IValidator.java" afterPath="$PROJECT_DIR$/src/validation/IValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/RelationshipValidator.java" afterPath="$PROJECT_DIR$/src/validation/RelationshipValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TestSuite.java" afterPath="$PROJECT_DIR$/test/TestSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/graph/ConnectionEdgeTest.java" afterPath="$PROJECT_DIR$/test/graph/ConnectionEdgeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/graph/FamilyGraphTest.java" afterPath="$PROJECT_DIR$/test/graph/FamilyGraphTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/validation/AgeValidatorTest.java" afterPath="$PROJECT_DIR$/test/validation/AgeValidatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/validation/GenderValidatorTest.java" afterPath="$PROJECT_DIR$/test/validation/GenderValidatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/validation/RelationshipValidatorTest.java" afterPath="$PROJECT_DIR$/test/validation/RelationshipValidatorTest.java" />
     </list>
     <ignored path="FamilyTree.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -182,6 +150,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Gopal S Akshintala &lt;gopalakshintala@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -1085,7 +1058,7 @@
       <workItem from="1469264062143" duration="33000" />
       <workItem from="1474871436448" duration="385000" />
       <workItem from="1474958141295" duration="456000" />
-      <workItem from="1478236386748" duration="658000" />
+      <workItem from="1478236386748" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="ToDo - Relationship Validator">
       <created>1462459786455</created>
@@ -1262,7 +1235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1469263899602</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Minor Changes">
+      <created>1478237055119</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1478237055120</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1298,7 +1278,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198656000" />
+    <option name="totallyTimeSpent" value="198680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1322,7 +1302,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42574257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42627737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38394162" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38394162" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14343598" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
